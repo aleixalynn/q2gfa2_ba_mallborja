@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    border: 2px;
+    border-color: black;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(230, 216, 117);
+    overflow: hidden;
+}
+
+.navbar1{
+    position: relative;
+    display: inline-flex;
+    left: 17%;
+}
+
+.navlink a{
+    border: 1px;
+    background-color: white;
+    width: 80px;
+    padding: 5px;
+}
+
+.text{
+    border: 1px;
+    color: aqua;
+    position: fixed;
+    left: 10%;
+    margin-top: 34%;
+    display: flex;
+}
+
+.bodies{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#zero{
+    background-image: url(images/2218077687.gif);
+    width: 300px;
+    height: 300px;
+    animation: zeromotion 90s infinite;
+}
+
+#one{
+    background-image: url(images/2218077687\ \(1\).gif);
+    width: 400px;
+    height: 400px;
+    animation: onemotion 90s infinite;
+}
+
+#two{
+    background-image: url(images/2218077687\ \(2\).gif);
+    width: 250px;
+    height: 250px;
+    animation: twomotion 90s infinite;
+}
+
+#three{
+    background-image: url(images/2218077687\ \(3\).gif);
+    width: 400px;
+    height: 400px;
+    animation: threegrow 90s infinite;
+}
+
+@keyframes zeromotion{
+    0% {transform: scale(1,1);}
+    100% {transform: scale(2,4);}
+}
+
+@keyframes onemotion{
+    0% {transform: skew(20deg, 10deg);}
+    100% {transform: skew(10deg, 15deg);}
+}
+
+@keyframes twomotion{
+    0% {transform: translate(190px, -40px);}
+    100% {transform: translate(-40px, 90px);}
+}
+
+@keyframes threegrow{
+    0% {transform: rotate(60deg);}
+    100% {transform: rotate(109deg);}
+}
